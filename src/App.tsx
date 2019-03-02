@@ -15,6 +15,18 @@ class App extends Component<any, ReplsState> {
       initItems: Repls,
       items: []
     };
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  componentDidMount() {
+    this.setState({ items: this.state.initItems });
+  }
+
+  handleChange(e: any) {
+    const updateList = this.state.initItems.filter(item => {
+      return item.keyword.search(e.target.value.toLowerCase()) !== -1;
+    });
+    this.setState({ items: updateList });
   }
 
   render() {
@@ -22,9 +34,13 @@ class App extends Component<any, ReplsState> {
       <div className="App">
         <header className="App-header">
           <form action="">
-            <input type="text" placeholder="search" />
+            <input
+              type="text"
+              placeholder="search"
+              onChange={this.handleChange}
+            />
           </form>
-          {this.state.initItems.map((item, index) => {
+          {this.state.items.map((item, index) => {
             return (
               <div key={index}>
                 <Command
