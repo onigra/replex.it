@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import CopyToClipboard from "react-copy-to-clipboard";
 
 interface CommandProps {
   id: string;
@@ -11,7 +12,11 @@ class Command extends Component<CommandProps> {
     return (
       <div id={this.props.id}>
         <h2>{this.props.title}</h2>
-        <p>{this.props.command}</p>
+        <pre>
+          <CopyToClipboard text={this.props.command}>
+            <code>{this.props.command}</code>
+          </CopyToClipboard>
+        </pre>
       </div>
     );
   }
