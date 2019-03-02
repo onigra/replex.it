@@ -1,24 +1,40 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Repls from "./repls";
+import Command from "./Command";
 
-class App extends Component {
+interface ReplsState {
+  initItems: Array<any>;
+  items: Array<any>;
+}
+
+class App extends Component<any, ReplsState> {
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      initItems: Repls,
+      items: []
+    };
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <form action="">
+            <input type="text" placeholder="search" />
+          </form>
+          {this.state.initItems.map((item, index) => {
+            return (
+              <div key={index}>
+                <Command
+                  id={item.id}
+                  title={item.title}
+                  command={item.command}
+                />
+              </div>
+            );
+          })}
         </header>
       </div>
     );
