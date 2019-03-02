@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import CopyToClipboard from "react-copy-to-clipboard";
+import "./Command.css";
 
 interface CommandProps {
   id: string;
