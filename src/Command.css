@@ -1,4 +1,5 @@
 pre {
+  background-color: black;
   width: em(440);
   margin: 1.4em auto;
   padding: 1.2em;
@@ -6,6 +7,7 @@ pre {
   box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.45);
   line-height: 0;
   counter-reset: line;
+  color: white;
 }
 
 .Popover-body {
@@ -14,7 +16,7 @@ pre {
   padding: 1rem 1.8rem;
   background: hsl(0, 0%, 27%);
   color: white;
-  border-radius: 0.3rem;
+  border-radius: 0.25rem;
 }
 
 .Popover-tipShape {
