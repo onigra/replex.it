@@ -1,9 +1,9 @@
 const Repls = [
   {
     id: "Ruby",
-    title: "Irb(Ruby)",
+    title: "Ruby(irb, pry)",
     command: "exit",
-    keyword: "ruby irb"
+    keyword: "ruby irb pry"
   },
   {
     id: "Node",
