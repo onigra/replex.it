@@ -33,6 +33,16 @@ class App extends Component<any, ReplsState> {
     return (
       <div className="App">
         <h1>replex.it</h1>
+        <div className="source">
+          <a
+            href="https://github.com/onigra/replex.it"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="App-link"
+          >
+            github.com/onigra/replex.it
+          </a>
+        </div>
         <form>
           <input
             type="text"

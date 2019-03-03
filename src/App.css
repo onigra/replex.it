@@ -18,6 +18,10 @@
   color: #61dafb;
 }
 
+.source {
+  font-size: 15px;
+}
+
 .search {
   width: 20%;
   position: relative;
