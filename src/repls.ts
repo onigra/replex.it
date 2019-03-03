@@ -28,6 +28,12 @@ const Repls = [
     title: "Kotlin",
     command: ":quit",
     keyword: "kotlin"
+  },
+  {
+    id: "Swift",
+    title: "Swift",
+    command: ":exit",
+    keyword: "swift"
   }
 ];
 
