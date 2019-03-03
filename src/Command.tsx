@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import CopyToClipboard from "react-copy-to-clipboard";
+import Popover from "react-popover";
 import "./Command.css";
 
 interface CommandProps {
@@ -8,16 +9,51 @@ interface CommandProps {
   command: string;
 }
 
-class Command extends Component<CommandProps> {
+interface CommandState {
+  isOpen: Boolean;
+  message: string;
+}
+
+class Command extends Component<CommandProps, CommandState> {
+  state = {
+    isOpen: false,
+    message: "Copy to clipboard"
+  };
+
+  open() {
+    this.setState({
+      isOpen: true
+    });
+  }
+
+  close() {
+    this.setState({
+      isOpen: false,
+      message: "Copy to clipboard"
+    });
+  }
+
+  copied() {
+    this.setState({
+      message: "Copied!!"
+    });
+  }
+
   render() {
     return (
       <div id={this.props.id}>
         <h2>{this.props.title}</h2>
-        <pre>
+        <Popover isOpen={this.state.isOpen} body={this.state.message}>
           <CopyToClipboard text={this.props.command}>
-            <code>{this.props.command}</code>
+            <pre
+              onMouseOver={() => this.open()}
+              onMouseOut={() => this.close()}
+              onClick={() => this.copied()}
+            >
+              <code>{this.props.command}</code>
+            </pre>
           </CopyToClipboard>
-        </pre>
+        </Popover>
       </div>
     );
   }
