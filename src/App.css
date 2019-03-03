@@ -16,3 +16,14 @@
 .App-link {
   color: #61dafb;
 }
+
+.search {
+  width: 20%;
+  position: relative;
+  border: 3px solid #cccccc;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #282c34;
+}

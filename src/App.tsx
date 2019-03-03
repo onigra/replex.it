@@ -33,11 +33,12 @@ class App extends Component<any, ReplsState> {
     return (
       <div className="App">
         <h1>replex.it</h1>
-        <form action="">
+        <form>
           <input
             type="text"
-            placeholder="search"
+            placeholder="Search: python, js, irb..."
             onChange={this.handleChange}
+            className="search"
           />
         </form>
         <header className="App-header">
