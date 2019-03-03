@@ -14,7 +14,7 @@ const Repls = [
   {
     id: "Python",
     title: "Python",
-    command: "quit",
+    command: "quit()",
     keyword: "python"
   },
   {
