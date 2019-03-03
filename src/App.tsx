@@ -32,14 +32,15 @@ class App extends Component<any, ReplsState> {
   render() {
     return (
       <div className="App">
+        <h1>replex.it</h1>
+        <form action="">
+          <input
+            type="text"
+            placeholder="search"
+            onChange={this.handleChange}
+          />
+        </form>
         <header className="App-header">
-          <form action="">
-            <input
-              type="text"
-              placeholder="search"
-              onChange={this.handleChange}
-            />
-          </form>
           {this.state.items.map((item, index) => {
             return (
               <div key={index}>
