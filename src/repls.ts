@@ -34,6 +34,12 @@ const Repls = [
     title: "Swift",
     command: ":exit",
     keyword: "swift"
+  },
+  {
+    id: "Haskell",
+    title: "Haskell(ghci)",
+    command: ":quit",
+    keyword: "haskell ghci"
   }
 ];
 
