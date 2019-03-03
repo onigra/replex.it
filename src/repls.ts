@@ -22,6 +22,12 @@ const Repls = [
     title: "Java(jshell)",
     command: "/exit",
     keyword: "java jshell"
+  },
+  {
+    id: "Kotlin",
+    title: "Kotlin",
+    command: ":quit",
+    keyword: "kotlin"
   }
 ];
 
