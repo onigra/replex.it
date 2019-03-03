@@ -17,7 +17,7 @@ interface CommandState {
 class Command extends Component<CommandProps, CommandState> {
   state = {
     isOpen: false,
-    message: "Copy to clipboard"
+    message: "Click, copy to clipboard"
   };
 
   open() {
@@ -29,7 +29,7 @@ class Command extends Component<CommandProps, CommandState> {
   close() {
     this.setState({
       isOpen: false,
-      message: "Copy to clipboard"
+      message: "Click, copy to clipboard"
     });
   }
 
