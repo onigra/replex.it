@@ -46,6 +46,24 @@ const Repls = [
     title: "PHP",
     command: "exit",
     keyword: "php"
+  },
+  {
+    id: "MySQL",
+    title: "MySQL",
+    command: "exit",
+    keyword: "mysql db"
+  },
+  {
+    id: "PostgreSQL",
+    title: "PostgreSQL",
+    command: "\\q",
+    keyword: "postgresql db"
+  },
+  {
+    id: "SQLite",
+    title: "SQLite",
+    command: ".exit",
+    keyword: "sqlite db"
   }
 ];
 
