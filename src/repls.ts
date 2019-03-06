@@ -7,7 +7,7 @@ const Repls = [
   },
   {
     id: "Node",
-    title: "Node",
+    title: "Node.js",
     command: "process.exit();",
     keyword: "node js javascript"
   },
