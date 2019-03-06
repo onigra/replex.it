@@ -1,4 +1,11 @@
-const Repls = [
+export interface ReplInfo {
+  id: string;
+  title: string;
+  command: string;
+  keyword: string;
+}
+
+const Repls: Array<ReplInfo> = [
   {
     id: "Ruby",
     title: "Ruby(irb, pry)",

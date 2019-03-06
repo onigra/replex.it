@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "./App.css";
-import Repls from "./repls";
+import Repls, { ReplInfo } from "./repls";
 import Command from "./Command";
 
 interface ReplsState {
-  initItems: Array<any>;
-  items: Array<any>;
+  initItems: Array<ReplInfo>;
+  items: Array<ReplInfo>;
 }
 
 class App extends Component<any, ReplsState> {
