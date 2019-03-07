@@ -13,7 +13,7 @@
     "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.8.4",
     "react-popover": "^0.5.10",
-    "react-scripts": "2.1.5",
+    "react-scripts": "2.1.8",
     "typescript": "3.3.3333"
   },
   "scripts": {
