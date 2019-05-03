@@ -14,7 +14,7 @@
     "react-dom": "^16.8.6",
     "react-popover": "^0.5.10",
     "react-scripts": "3.0.0",
-    "typescript": "3.3.3333"
+    "typescript": "3.4.5"
   },
   "scripts": {
     "start": "react-scripts start",
