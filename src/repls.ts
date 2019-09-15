@@ -71,6 +71,12 @@ const Repls: Array<ReplInfo> = [
     title: "SQLite",
     command: ".exit",
     keyword: "sqlite db"
+  },
+  {
+    id: "Elixir",
+    title: "Elixir(iex)",
+    command: "Ctrl+c & a",
+    keyword: "elixir iex"
   }
 ];
 
