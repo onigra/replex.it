@@ -9,7 +9,7 @@
     "@types/react-copy-to-clipboard": "^4.2.6",
     "@types/react-dom": "16.9.1",
     "@types/react-popover": "^0.5.3",
-    "react": "^16.9.0",
+    "react": "^16.10.1",
     "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.9.0",
     "react-popover": "^0.5.10",
