@@ -24,7 +24,7 @@ class App extends Component<any, ReplsState> {
 
   handleChange(e: any) {
     const updateList = this.state.initItems.filter(item => {
-      return item.keyword.search(e.target.value.toLowerCase()) !== -1;
+      return item.keyword.indexOf(e.target.value.toLowerCase()) !== -1;
     });
     this.setState({ items: updateList });
   }
