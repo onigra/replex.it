@@ -5,7 +5,7 @@
   "dependencies": {
     "@types/jest": "26.0.19",
     "@types/node": "14.14.19",
-    "@types/react": "17.0.0",
+    "@types/react": "17.0.14",
     "@types/react-copy-to-clipboard": "^5.0.0",
     "@types/react-dom": "17.0.0",
     "@types/react-popover": "^0.5.3",
